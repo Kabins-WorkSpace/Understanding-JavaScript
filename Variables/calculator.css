@@ -1,0 +1,91 @@
+.calculator-container {
+  width: 400px;
+  height: 700px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 550px;
+  padding: 30px 5px 15px;
+}
+
+.display-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.text-box {
+  padding: 140px 20px 20px 150px;
+  font-size: 20px;
+  font-family: Roboto, Arial;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.text-box::placeholder{
+  font-size: 60px;
+  font-weight: 300;
+  font-family: Roboto, Arial;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.text-box:active {
+  border: none;
+}
+
+.input-button-container {
+  display: flex;
+  flex-direction: column;
+  width: 92%;
+}
+
+.four-element-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+  margin-bottom: 15px;
+}
+
+.input-button {
+  height: 80px;
+  border-radius: 40px;
+  border: none;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: Roboto, Arial;
+  color: white;
+  background-color: rgb(73, 73, 73);
+  cursor:pointer;
+  transition: opacity 0.15s;
+}
+
+.input-button:active{
+  opacity: 0.8;
+}
+.special{
+  background-color: rgba(224, 222, 222, 0.762);
+  color: black;
+}
+
+.operation{
+  background-color: rgba(243, 175, 2, 0.901);
+  font-size: 40px;
+  font-weight: 450;
+}
+
+.point{
+  font-size: 50px;
+}
+
+.bottom-element-row {
+  display: grid;
+  grid-template-columns: 2.08fr 0.96fr 0.96fr;
+  column-gap: 15px;
+  margin-bottom: 15px;
+}

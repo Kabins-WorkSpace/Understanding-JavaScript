@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--Html code for Calculator-->
+  <div class="calculator-container">
+    <div class="display-box">
+      <input type="text" class="text-box">
+    </div>
+    <div class="input-button-container">
+      <div class="four-element-row">
+        <button class="input-button special" onclick="
+          calculation = 0;
+          console.log(calculation);">AC</button>
+        <button class="input-button special"><span>+</span>/<span>-</span></button>
+        <button class="input-button special">&#37;</button>
+        <button class="input-button operation" onclick="
+          calculation += ' / ';
+          Math.floor(calculation);
+          console.log(calculation);">&divide;</button>
+      </div>
+
+      <div class="four-element-row">
+        <button class="input-button" onclick="
+          calculation += 7;
+          console.log(calculation);">7</button>
+        <button class="input-button" onclick="
+          calculation += 8;
+          console.log(calculation);">8</button>
+        <button class="input-button" onclick="
+          calculation += 9;
+          console.log(calculation);">9</button>
+        <button class="input-button operation" onclick="
+          calculation += ' * ';
+          console.log(calculation);">&times;</button>
+      </div>
+
+      <div class="four-element-row">
+        <button class="input-button" onclick="
+          calculation += 4;
+          console.log(calculation);">4</button>
+        <button class="input-button" onclick="
+          calculation += 5;
+          console.log(calculation);">5</button>
+        <button class="input-button" onclick="
+          calculation += 6;
+          console.log(calculation);">6</button>
+        <button class="input-button operation" onclick="
+          calculation += ' - ';
+          console.log(calculation);">&minus;</button>
+      </div>
+
+      <div class="four-element-row">
+        <button class="input-button" onclick="
+          calculation += 1;
+          console.log(calculation);">
+          1</button>
+        <button class="input-button" onclick="
+          calculation += 2;
+          console.log(calculation);">
+          2</button>
+        <button class="input-button" onclick="
+          calculation += 2;
+          console.log(calculation);">3</button>
+        <button class="input-button operation" onclick="
+          calculation += ' + ';
+          console.log(calculation);">&#43;</button>
+      </div>
+
+      <div class="bottom-element-row">
+        <button class="input-button zero">0</button>
+        <button class="input-button point">.</button>
+        <button class="input-button operation" onclick="
+          calculation = eval(calculation);
+          console.log(calculation);"><!--Equals to Button -->&#61;</button>
+      </div>
+    </div>
+  </div>
+  <!--End of Html code for Calculator-->
+
+  <script>
+    let calculation = '';
+  </script>
+</body>
+
+</html>
