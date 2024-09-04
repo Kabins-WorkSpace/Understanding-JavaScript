@@ -38,6 +38,8 @@
 
 
 # Exercises
+
+In order to save time, I implemented all of these in a single HTML file by building a calculator which uses all the concepts discussed and solves everything from the exercises as well.
 ![Variables(I)](https://github.com/user-attachments/assets/739144ca-c5d6-454e-a63f-776bf7899578)
 ![Variables(II)](https://github.com/user-attachments/assets/762ec971-dc8e-46d1-ae3f-61141ce155e0)
 ![Variables(III)](https://github.com/user-attachments/assets/cf55c30e-3317-4634-a2b7-41861a63642c)
