@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Heads or Tails</title>
+</head>
+
+<body>
+  <script>
+    let randomNumber = Math.random();
+    let result;
+    (randomNumber < 0.5) ? result = 'Heads' : result = 'Tails';
+    console.log(`Result : ${result}`);
+    let guess = 'Heads';
+    console.log(`Your Guess : ${guess}`);
+    (result === guess) ? console.log('You Win!') : console.log('You Lose!');
+  </script>
+</body>
+
+</html>
