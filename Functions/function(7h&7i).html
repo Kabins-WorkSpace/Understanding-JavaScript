@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Functions
+  </title>
+</head>
+
+<body>
+  <script>
+    console.log('JavaScript   ||  KABIN THAPA\n')
+    console.log('Unit Conversion : Length\n\n');
+    function convertLength(length, from, to) {
+      // Conversion to Miles
+      if ((from === 'k' || from === 'K') && (to === 'm' || to === 'M')) {
+        convertToMiles(length, from);
+      }
+      else if ((from === 'f' || from === 'F') && (to === 'm' || to === 'M')) {
+        convertToMiles(length, from);
+      }
+      else if ((from === 'm' || from === 'M') && (to === 'm' || to === 'M')) {
+        console.log(`Given Length     = ${length} miles`);
+        console.log(`Converted Length = ${length} miles`);
+      }
+
+      // Conversion to Feet
+      else if ((from === 'k' || from === 'K') && (to === 'f' || to === 'F')) {
+        convertToFeet(length, from);
+      }
+      else if ((from === 'm' || from === 'M') && (to === 'f' || to === 'F')) {
+        convertToFeet(length, from);
+      }
+      else if ((from === 'f' || from === 'F') && (to === 'f' || to === 'F')) {
+        console.log(`Given Length     = ${length} ft`);
+        console.log(`Converted Length = ${length} ft`);
+      }
+
+      // Conversion to Kms
+      else if ((from === 'm' || from === 'M') && (to === 'k' || to === 'K')) {
+        convertToKms(length, from);
+      } else if ((from === 'f' || from === 'F') && (to === 'k' || to === 'K')) {
+        convertToKms(length, from);
+      }
+      else if ((from === 'k' || from === 'K') && (to === 'k' || to === 'K')) {
+        console.log(`Given Length     = ${length} kms`);
+        console.log(`Converted Length = ${length} kms`);
+      }
+      else
+        console.log('Invalid Unit, try again!');
+    }
+
+    function convertToMiles(amount, unit) {
+      let miles;
+      if (unit === 'k' || unit === 'K') {
+        miles = amount / 1.6;
+        console.log(`Given Length     = ${amount} kms`);
+        console.log(`Converted Length = ${miles} miles`);
+      }
+      else if (unit === 'f' || unit === 'F') {
+        miles = amount / 5280;
+        console.log(`Given Length     = ${amount} ft`);
+        console.log(`Converted Length = ${miles} miles`);
+      }
+      else {
+        console.log(`Invalid unit: ${unit}`);
+      }
+      console.log('\n');
+    }
+
+    function convertToKms(amount, unit) {
+      let kms;
+      if (unit === 'm' || unit === 'M') {
+        kms = amount * 1.6;
+        console.log(`Given Length     = ${amount} miles`);
+        console.log(`Converted Length = ${kms} kms`);
+      }
+      else if (unit === 'f' || unit === 'F') {
+        kms = amount / 3281;
+        console.log(`Given Length     = ${amount} ft`);
+        console.log(`Converted Length = ${kms} kms`);
+      }
+      else {
+        console.log(`Invalid unit: ${unit}`);
+      }
+      console.log('\n');
+
+    }
+
+    function convertToFeet(amount, unit) {
+      let ft;
+      if (unit === 'm' || unit === 'M') {
+        ft = amount * 5280;
+        console.log(`Given Length     = ${amount} miles`);
+        console.log(`Converted Length = ${ft} ft`);
+      }
+      else if (unit === 'k' || unit === 'K') {
+        ft = amount * 3281;
+        console.log(`Given Length     = ${amount} kms`);
+        console.log(`Converted Length = ${ft} ft`);
+      }
+      else {
+        console.log(`Invalid unit: ${unit}`);
+      }
+      console.log('\n');
+
+    }
+    convertLength(5, 'm', 'k');
+    convertLength(5, 'm', 'f');
+    convertLength(5, 'k', 'f');
+    convertLength(5, 'k', 'k');
+
+
+  </script>
+</body>
+
+</html>

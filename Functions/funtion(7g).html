@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Functions
+  </title>
+</head>
+
+<body>
+  <script>
+    function convertLength(length, from, to) {
+      if ((from === 'k' || from === 'K') && (to === 'm' || to === 'M')) {
+        convertToMiles(length);
+      }
+      else if ((from === 'm' || from === 'M') && (to === 'k' || to === 'K')) {
+        convertToKms(length);
+      }
+      else
+        console.log('Invalid Unit, try again!');
+    }
+
+    function convertToMiles(kms) {
+      let miles = kms / 1.6;
+      console.log(`Given Length     = ${kms} kms`);
+      console.log(`Converted Length = ${miles} miles`);
+    }
+    function convertToKms(miles) {
+      let kms = miles * 1.6;
+      console.log(`Given Length     = ${miles} miles`);
+      console.log(`Converted Length = ${kms} kms`);
+    }
+    convertLength(5, 'm', 'k');
+    convertLength(32, 'k', 'm');
+  </script>
+</body>
+
+</html>

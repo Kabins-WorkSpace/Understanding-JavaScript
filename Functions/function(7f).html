@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Functions
+  </title>
+</head>
+
+<body>
+  <script>
+    function convertTemperature(degrees, unit) {
+      if (unit === 'C' || unit === 'c') {
+        convertToFahrenheit(degrees);
+      }
+      else if (unit === 'F' || unit === 'f') {
+        convertToCelsius(degrees);
+      }
+      else
+        console.log('Invalid Unit, try again!');
+    }
+
+    function convertToFahrenheit(celsius) {
+      let fahrenheit = (celsius * 9 / 5) + 32;
+      console.log(`Temperature(Celsius) = ${celsius}`);
+      console.log(`Temperature(Fahrenheit) = ${fahrenheit}`);
+    }
+    function convertToCelsius(fahrenheit) {
+      let celsius = (fahrenheit - 32) * 5 / 9;
+      console.log(`Temperature(Fahrenheit) = ${fahrenheit}`);
+      console.log(`Temperature(Celsius) = ${celsius}`);
+    }
+    convertTemperature(86, 'f');
+  </script>
+</body>
+
+</html>
