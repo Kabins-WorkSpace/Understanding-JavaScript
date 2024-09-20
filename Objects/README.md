@@ -92,9 +92,9 @@ func(null); -> null
 ## Exercises
 
 
-![Objects(8c)](https://github.com/user-attachments/assets/25893b4b-a2e3-44dc-baa4-96e7819f9851)
-![Objects(8b)](https://github.com/user-attachments/assets/6ffe8181-5f68-4020-a181-aa4c5b7808db)
 ![Objects(8a)](https://github.com/user-attachments/assets/8aa957f6-a70e-459d-938a-886c1c8ae075)
+![Objects(8b)](https://github.com/user-attachments/assets/6ffe8181-5f68-4020-a181-aa4c5b7808db)
+![Objects(8c)](https://github.com/user-attachments/assets/25893b4b-a2e3-44dc-baa4-96e7819f9851)
 
                   
 
