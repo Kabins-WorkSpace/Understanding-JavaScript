@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    DOM
+  </title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    .subscribe-button {
+      cursor: pointer;
+      background-color: black;
+      color: white;
+      font-family: Arial;
+      font-size: 13px;
+      font-weight: bold;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 20px;
+      margin-bottom: 40px;
+    }
+
+    .isSubscribed {
+      background-color: rgb(238, 238, 238);
+      color: black;
+    }
+
+    .youtube-subscribe-container {
+      padding: 15px 10px 30px;
+    }
+
+    .js-amazon-text {
+      font-size: 16px;
+      padding: 0px 15px 10px;
+    }
+
+    .js-amazon-text-title{
+      font-weight: 550;
+    }
+
+    .js-input-value{
+      padding: 10px 30px 10px 10px;
+      font-size: 14px;
+      margin-left: 15px;
+    }
+    .js-input-value::placeholder{
+      font-size: 15px;
+    }
+
+    .js-calculate-button{
+      padding: 11px;
+      font-size: 15px;
+      border: none;
+      background-color: rgb(10, 152, 10);
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="youtube-subscribe-container">
+    <p>YouTube Subscribe Button</p>
+    <button onclick="
+    subscribe();
+    " class="js-subscribe-button subscribe-button">Subscribe</button>
+  </div>
+  <p class="js-amazon-text js-amazon-text-title">Amazon Shipping Calculator</p>
+  <p class="js-amazon-text">Orders under $40 = +$10 Shipping</p>
+  <p class="js-amazon-text">Orders over $40 = Free Shipping</p>
+  <p></p>
+  <input class="js-input-value" placeholder="Cost of Order" onkeydown="
+    if(event.key === 'Enter')
+    calculate();">
+  <button class="js-calculate-button" onclick="
+   calculate();">Calculate</button>
+  <p></p>
+  <p class="js-displayPrice js-amazon-text"></p>
+  <script>
+    function subscribe() {
+      const subscribeButton = document.querySelector('.js-subscribe-button');
+      if (subscribeButton.innerText === 'Subscribe') {
+        subscribeButton.innerHTML = 'Subscribed';
+        subscribeButton.classList.add('isSubscribed');
+      }
+      else {
+        subscribeButton.classList.remove('isSubscribed');
+        subscribeButton.innerHTML = 'Subscribe';
+      }
+    }
+
+    function calculate() {
+      const inputAmount = document.querySelector('.js-input-value');
+      const orderAmount = Number(inputAmount.value);
+      let finalPrice;
+      if (orderAmount < 40) {
+        finalPrice = Math.round(orderAmount) + 10;
+      }
+      else
+        finalPrice = Math.round(orderAmount);
+      document.querySelector('.js-displayPrice').innerHTML = `Total Price : $${finalPrice}`;
+    }
+  </script>
+</body>
+
+</html>
