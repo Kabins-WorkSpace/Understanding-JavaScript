@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Arrays & Loops(Part2)</title>
+  <link rel="stylesheet" href="arrayProject.css">
+</head>
+
+<body>
+
+  <script>
+    const stringName = ['egg', 'egg', 'chicken', 'egg', 'pork'];
+    function removeEgg(arrayGiven) {
+      let index;
+      let newArray = [];
+      for (let i = 0; i < stringName.length; i++) {
+        const word = arrayGiven[i];
+        if (word === 'egg') {
+          continue;
+        }
+        else
+          newArray.push(word);
+      }
+      return newArray;
+    }
+    console.log(removeEgg(stringName));
+  </script>
+</body>
+
+</html>

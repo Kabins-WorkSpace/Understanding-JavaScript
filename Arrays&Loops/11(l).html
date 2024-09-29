@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Arrays & Loops</title>
+  <link rel="stylesheet" href="arrayProject.css">
+</head>
+
+<body>
+
+  <script>
+    const result = {
+      min: null,
+      max: null,
+    };
+    console.log(minMax([]));
+    console.log(minMax([1, 2, 3]));
+    function minMax(nums) {
+      for (let i = 0; i < nums.length; i++) {
+        const value = nums[i];
+        if (result.min === null || value < result.min) {
+          result.min = value;
+        }
+        if (result.max === null || value > result.max) {
+          result.max = value;
+        }
+      }
+
+      return result;
+    }
+  </script>
+</body>
+
+</html>

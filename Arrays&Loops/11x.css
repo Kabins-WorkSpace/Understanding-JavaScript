@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.js-title {
+  font-size: 26px;
+  font-weight: 500;
+  padding: 15px 15px;
+  margin: 0;
+}
+.js-input-div{
+  margin-bottom: 10px;
+}
+.js-input-div,
+.js-display-div {
+  padding-left: 15px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 250px 200px 110px;
+  column-gap: 15px;
+  row-gap: 10px;
+}
+
+.js-textbox,
+.js-datebox {
+  font-size: 16px;
+  border-width: 1px;
+  border-radius: 2px;
+}
+
+.js-textbox {
+  padding: 8px 45px 8px 15px;
+}
+
+.js-datebox {
+  padding: 7px 25px 7px 15px;
+  color: grey;
+}
+
+.js-addButton,
+.js-deleteButton {
+  padding: 7px 20px;
+  font-size: 18px;
+  font-weight: 380;
+  background-color: rgb(9, 167, 9);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+}
+
+.js-deleteButton{
+  background-color: rgb(103, 36, 31);
+}
+
+.js-display-text{
+  font-size: 18px;
+}

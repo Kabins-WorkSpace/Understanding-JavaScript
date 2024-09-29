@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Arrays & Loops</title>
+  <link rel="stylesheet" href="arrayProject.css">
+</head>
+
+<body>
+
+  <script>
+    console.log(addNum([1, 2, 3], [3, 4, 5]));
+    console.log(addNum([1, 2, 3], [5, 6, 7, 8]));
+    console.log(addNum([-2, -1, 0, 99], [0, 3, 2, 4]));
+    function addNum(array1, array2) {
+      const changedArray = [];
+      for (let i = 0; i < array1.length; i++) {
+        changedArray.push(array1[i] + array2[i]);
+      }
+      return changedArray;
+    }
+  </script>
+</body>
+
+</html>

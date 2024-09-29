@@ -1,0 +1,71 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
+
+.js-heading-display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.js-title-text {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 20px 5px;
+  margin: 0px 5px;
+}
+
+.js-todoName {
+  width: 180px;
+  height: 34px;
+  font-size: 16px;
+  margin: 0 7px 0 10px;
+}
+
+.js-todoDate {
+  width: 150px;
+  height: 36px;
+  margin: 0 7px 0 0px;
+}
+
+.js-normal-button {
+  width: 110px;
+  height: 40px;
+  background-color: rgb(14, 149, 27);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.js-delete-button {
+  background-color: rgb(164, 22, 22);
+  margin-left: -34px;
+  
+}
+
+.js-display-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 12px 0 0 10px;
+}
+
+.js-todo-individual-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  height: 40px;
+}
+
+.js-display-text {
+  font-size: 16px;
+  font-weight: 400;
+  width: 200px;
+  margin: 0 0px 0 0;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Arrays & Loops(Part2)</title>
+  <link rel="stylesheet" href="arrayProject.css">
+</head>
+
+<body>
+
+  <script>
+    const stringName = ['chicken', 'egg', 'egg', 'egg', 'egg', 'chicken', 'egg', 'pork'];
+    stringName.reverse();
+    function removeTwoEgg(arrayGiven) {
+      let index = 0;
+      let newArray = [];
+      for (let i = 0; i < stringName.length; i++) {
+        const word = arrayGiven[i];
+        if (index < 2 && word === 'egg') {
+          index++;
+          continue;
+        }
+        else
+          newArray.push(word);
+      }
+      return newArray.reverse();
+    }
+    console.log(removeTwoEgg(stringName));
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Arrays & Loops(Part2)</title>
+  <link rel="stylesheet" href="arrayProject.css">
+</head>
+
+<body>
+
+  <script>
+    const stringName = ['hello', 'word', 'search', 'k xa yarr'];
+    function findIndex(arrayGiven, wordPassed) {
+      let index;
+      for (let i = 0; i < stringName.length; i++) {
+        const word = arrayGiven[i];
+        const searchWord = wordPassed;
+        if (word === searchWord) {
+          index = i;
+          break;
+        }
+      }
+      return index;
+    }
+    console.log(findIndex(stringName, 'search'));
+  </script>
+</body>
+
+</html>

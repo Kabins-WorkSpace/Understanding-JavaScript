@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Arrays & Loops</title>
+  <link rel="stylesheet" href="arrayProject.css">
+</head>
+
+<body>
+
+  <script>
+    const words = ['kan', 'man', 'nan', 'nan', 'nan'];
+    console.log(countWords(words));
+    function countWords(words) {
+      const stringWithWordCount = {
+
+      };
+      for (let i = 0; i < words.length; i++) {
+        word = words[i];
+        if (!stringWithWordCount[word]) {
+          stringWithWordCount[word] = 1;
+        }
+        else
+          stringWithWordCount[word]++;
+      }
+      return stringWithWordCount;
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>
